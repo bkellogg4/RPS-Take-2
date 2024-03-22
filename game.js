@@ -1,7 +1,7 @@
 function playGame() {
     
     let score = 0;
-    
+    let playerSelection;
     function getComputerChoice() {
         let arr = ["rock", "paper", "scissors"];
         return arr[(Math.floor(Math.random() * arr.length))];
@@ -48,23 +48,33 @@ function playGame() {
         score += points;
     }
 
-    let i = 1;
-    while (i <= 5) {
+    
+    //let i = 5;
+    //while (i <= 5) {
         computerSelection = getComputerChoice();
-        playerEntry = prompt("Select your weapon: rock, paper or scissors");
-        playerSelection = playerEntry.toLowerCase();
-        let result = playRound(playerEntry, computerSelection);
+        
+        const buttons = document.querySelectorAll("button");
+        buttons.forEach((button) => {
+            button.addEventListener("click", () => {
+               //alert(button.id)
+               playerSelection = button.id;
+               console.log(playerSelection);
+                playRound(playerSelection, computerSelection);
+            });
+        });
+        
+        //let result = playRound(playerSelection, computerSelection);
         points = parseInt(result);
         updateScore(points);
         
-        i++;
+        //i++;
         
         console.log(playerSelection);
         console.log(computerSelection);
         //console.log(playRound(playerSelection, computerSelection));
         //console.log(points);
         console.log(score);
-    } 
+    //} 
     
     if (score > 0) {
         alert("You are the CHAMPION!");
