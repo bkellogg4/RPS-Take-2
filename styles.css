@@ -1,0 +1,13 @@
+.container-test {
+    display: flex;
+    background-color: rgb(255, 127, 229);
+}
+.player-container {
+    display: flex;
+    background: red;
+}
+
+.computer-container {
+    display: flex;
+    background-color: blue;
+}

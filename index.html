@@ -3,12 +3,34 @@
     <head>
         <meta charset="UTF-8">
         <title>Rock Paper Scissors Game</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+        <h1>Rock, Paper, Scissors Game</h1>
        <button class="buttons" id="rock">ROCK</button>
        <button class="buttons" id="paper">PAPER</button>
        <button class="buttons" id="scissors">SCISSORS</button>
 
-        <script src="game.js"></script>
+       <div class="container-test">
+        <div class="player-container">
+            <h3 id="playerWeapon">Player Weapon:</h3>
+        </div>
+        <div class="computer-container">
+            <h3 id="computerWeapon">Computer Weapon:</h3>
+        </div>
+        <div class="roundContainer">
+            <h3 id="roundWinner">Round Winner:</h3>
+        </div>
+        
+       </div>
+       <div class="scoreContainer">
+        <h3 id="currentScore">Current Score</h3>
+        <h5>Player Score:</h5>
+        <p id="player">0</p>
+        <h5>Computer Score:</h5>
+        <p id="computer">0</p>
+        <h2 id="overallWinner">Overall Winner:</h2>
+    </div>
+        <script src="game.js" defer></script>
     </body>
 </html>
