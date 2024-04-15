@@ -102,9 +102,9 @@ function playGame() {
             overallWinner.appendChild(div4);
 
             if (winner == "player") {
-                alert("You are the champion!!");
+                //alert("You are the champion!!");
             } else if (winner == "computer") {
-                alert("Better luck next time, LOSER!!");
+                //alert("Better luck next time, LOSER!!");
             }
             });
             

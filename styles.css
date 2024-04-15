@@ -1,13 +1,36 @@
+body {
+    background-color: rgb(243, 245, 248);
+}
+.button-container {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
 .container-test {
     display: flex;
-    background-color: rgb(255, 127, 229);
+    background-color: rgb(44, 64, 108);
 }
 .player-container {
     display: flex;
-    background: red;
+    background: rgb(0, 255, 247);
+    padding: 25px;
 }
 
 .computer-container {
     display: flex;
     background-color: blue;
+    padding: 25px;
+}
+.round-container {
+    background-color: darkgoldenrod;
+    padding: 25px;
+}
+
+.score-container {
+    display: flex;
+    gap: 20px;
+}
+
+.winner-container {
+    background-color: green;
+    padding: 25px;
 }
