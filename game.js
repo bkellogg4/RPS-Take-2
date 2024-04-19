@@ -107,11 +107,13 @@ function playGame() {
                 //alert("You are the champion!!");
                 const div5 = document.createElement('div');
                 div5.textContent = "You are the CHAMPION!!"
+                div5.style.background = "green";
                 div4.appendChild(div5);
             } else if (winner == "computer") {
                 //alert("Better luck next time, LOSER!!");
                 const div5 = document.createElement('div');
                 div5.textContent = "You are the LOSER!! Better luck next time.";
+                div5.style.background = "red";
                 div4.appendChild(div5);
             }
             });

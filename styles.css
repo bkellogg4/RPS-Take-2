@@ -2,27 +2,29 @@ body {
     background-color: rgb(243, 245, 248);
 }
 .button-container {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
 }
 .container-test {
     display: flex;
-    background-color: rgb(44, 64, 108);
+    background-color: green;
 }
 .player-container {
     display: flex;
-    background: rgb(0, 255, 247);
-    padding: 25px;
+    background: rgb(41, 148, 145);
+    padding: 10px;
 }
 
 .computer-container {
     display: flex;
-    background-color: blue;
-    padding: 25px;
+    background-color: rgb(224, 147, 22);
+    padding: 10px;
 }
 .round-container {
-    background-color: darkgoldenrod;
-    padding: 25px;
+    background-color: green;
+    padding: 10px;
 }
 
 .score-container {
@@ -31,6 +33,5 @@ body {
 }
 
 .winner-container {
-    background-color: green;
-    padding: 25px;
+    padding: 10px;
 }
